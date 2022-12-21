@@ -64,7 +64,7 @@
     };
 
     saltar() {
-        this.player.setVelocityY(-300);
+        this.player.setVelocityY(-350);
         this.player.play('saltar');
     }
 
@@ -83,7 +83,7 @@
         const aleatorio = Math.floor(Math.random() * 2);
 
         for (let i = 0; i < 8; i++) {
-            
+
             if (i !== hueco && i !== hueco + 1 && i !== hueco - 1) {
                 let cubo;
                 if (i == hueco - 2) {
@@ -149,7 +149,7 @@ const config = {
     physics: {
         default: 'arcade',
         arcade: {
-            gravity: { y: 500 }
+            gravity: { y: 550 }
         },
     },
 };
